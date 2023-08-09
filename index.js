@@ -10,9 +10,9 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-app.use("/user",authRotes)
-app.use(authentication)
-app.use("/post",postRoute)
+// app.use("/user",authRotes)
+// app.use(authentication)
+app.use("/user",postRoute)
 
 app.listen(4500,async()=>{
     try{
